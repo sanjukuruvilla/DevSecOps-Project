@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  web:
+    image: "leescoresby/netflix:latest"
+    environment:
+      - TMDB_V3_API_KEY=498e82b37fda601f7365012a810c8f74
+    ports:
+      - "8083:80"
+    stdin_open: true
+    tty: true
